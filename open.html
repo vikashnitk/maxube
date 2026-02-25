@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open in Maxube</title>
+  <script>
+    (function () {
+      var qs = window.location.search || '';
+      var appUrl = 'maxube://open' + qs;
+      var webDeepLink = window.location.origin + '/open.html' + qs;
+      var referrer = 'deep_link=' + encodeURIComponent(webDeepLink);
+      var playStoreApp = 'market://details?id=com.vikash.maxube&referrer=' + encodeURIComponent(referrer);
+      var playStoreWeb = 'https://play.google.com/store/apps/details?id=com.vikash.maxube&referrer=' + encodeURIComponent(referrer);
+
+      window.location.href = appUrl;
+      setTimeout(function () {
+        window.location.href = playStoreApp;
+      }, 1200);
+
+      setTimeout(function () {
+        window.location.href = playStoreWeb;
+      }, 2600);
+    })();
+  </script>
+</head>
+<body>
+  <p>Opening Maxube...</p>
+  <p>If nothing happens, install or open Maxube from Play Store.</p>
+</body>
+</html>
