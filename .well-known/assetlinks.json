@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vikash.maxube",
+      "sha256_cert_fingerprints": [
+        "E9:71:E5:CA:40:7D:F8:15:7B:33:1B:63:9A:BC:BB:D5:34:F6:E0:C5:76:ED:64:90:83:B6:58:2D:30:FC:D1:ED"
+      ]
+    }
+  }
+]
